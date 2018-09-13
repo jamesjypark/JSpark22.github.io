@@ -1,7 +1,7 @@
 ---
 layout: "page"
 title: Donate
-permalink: "/give-me-money-please/"
+permalink: "/donate/"
 ---
 
 Donate to my site

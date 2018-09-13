@@ -1,7 +1,14 @@
-{% for post in site.posts %}
-  <li><a href="{{post.url}}">{{post.title}}</a></li>
-{% endfor %}
-
-{% for post in site.pages %}
-  <li><a href="{{post.url}}">{{post.title}}</a></li>
-{% endfor %}
+<style>
+  div{
+    height: 70px;
+    background: none;
+    position: relative;
+    top:0px;
+  }
+</style>
+<div>
+  <link rel="stylesheet" href="/style.css">
+  <a href="/index/"><p1 class = "headerName"> home </p1></a>
+  <a href="/about/"><p1 class = "headerName"> about me </p1></a>
+  <a href="/donate/"><p1 class = "headerName"> donate </p1></a>
+<div>

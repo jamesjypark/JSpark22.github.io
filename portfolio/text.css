@@ -1,75 +1,98 @@
 /* GLOBAL STYLES */
 body {
-  padding-top: 5em;
   display: flex;
   justify-content: center;
 }
 
-/* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  font-size: 20vw;
-  font-weight: lighter;
+  font-size: 18vw;
+  font-weight: normal;
   color: white;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid transparent; /* The typwriter cursor */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
+  font-family: "Viga";
+  overflow: hidden;
+  background: transparent;
+  border-right: .05em solid transparent;
+  margin-left: 0;
+  margin-top:-5%;
+  letter-spacing: .05em;
   animation:
-    typing 0.6s steps(7, end),
-    blink-caret .5s step-end 2;
+    typing 0.7s steps(6, end),
+    blink-caret 0.5s step-end 1.6;
 }
 
 .typewriter h2{
-  font-size: 20vw;
-  font-weight: lighter;
+  font-size: 18vw;
+  font-weight: normal;
   color: white;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid transparent; /* The typwriter cursor */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  font-family: "Viga";
+  overflow: hidden;
+  background: transparent;
+  border-right: .05em solid transparent; /* The typwriter cursor */
+  margin-top:-30%;
   letter-spacing: .10em; /* Adjust as needed */
   animation:
-    typing 0.5s steps(7, end),
-    blink-caret .5s step-end infinite;
-  animation-delay: 0.8s;
+    typing 0.7s steps(5, end),
+    blink-caret .5s step-end 1.5;
 }
 
+.typewriter{
+  max-width: 500vw;
+}
 
+.menu{
+  font-size:6vw;
+  color: white;
+  font-family: "Viga";
+  position:absolute;
+  transition: 0.3s ease;
+  top:38vw;
+  opacity: 0;
+  animation:
+    appear 1s forwards;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+#github{
+  left:28vw;
+}
+
+#linkedin{
+  left:37.33333vw;
+}
+
+#design{
+  left:46.666666vw;
+}
+
+#profile{
+  left:56vw;
+}
+
+.menu:hover{
+  top:36vw;
+}
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-  0% {color: black;}
-  1% {color: white;}
-  100% {color: white;}
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  from, to { border-color: white }
+  50% { border-color: white}
 }
 
-
-.name{
-  font-family: "Oswald";
-  font-weight: lighter;
-}
-
-#firstName{
-  color: white;
-  background: none;
-  position: absolute;
-  margin-top: -5%;
-  margin-left: 1.5%;
-}
-
-#lastName{
-  color: rgba(24,100,164);
-  background: none;
-  position: absolute;
-  margin-top: 105%;
-  margin-left: 0%;
+@keyframes appear{
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -4,30 +4,16 @@ body {
   justify-content: center;
 }
 
-#hi{
-  font-size:5vw;
-  position:absolute;
-  top:2vw;
-  left:20vw;
-  animation:
-    appear 1s forwards;
-    animation-duration: 5s;
-}
-
-.text{
-  color: white;
-  font-family: "Poppins";
-  background: transparent;
-}
-
 .typewriter h1 {
-  font-size: 16vw;
-  font-weight: bolder;
+  font-size: 18vw;
+  font-weight: normal;
+  color: white;
+  font-family: "Viga";
   overflow: hidden;
   background: transparent;
   border-right: .05em solid transparent;
   margin-left: 0;
-  margin-top:9vw;
+  margin-top:-5%;
   letter-spacing: .05em;
   animation:
     typing 0.7s steps(6, end),
@@ -35,13 +21,15 @@ body {
 }
 
 .typewriter h2{
-  font-size: 16vw;
-  font-weight: bolder;
+  font-size: 18vw;
+  font-weight: normal;
+  color: white;
+  font-family: "Viga";
   overflow: hidden;
   background: transparent;
   border-right: .05em solid transparent; /* The typwriter cursor */
-  margin-top:-20vw;
-  letter-spacing: .05em; /* Adjust as needed */
+  margin-top:-30%;
+  letter-spacing: .10em; /* Adjust as needed */
   animation:
     typing 0.7s steps(5, end),
     blink-caret .5s step-end 1.5;
@@ -51,65 +39,39 @@ body {
   max-width: 500vw;
 }
 
-#info{
-  position:absolute;
-  left:5vw;
-  top:55vw;
-  font-size:6vw;
-  text-align: left;
-}
 .menu{
   font-size:6vw;
   color: white;
   font-family: "Viga";
   position:absolute;
-  transition: 0.5s ease;
-  /* animation:
+  transition: 0.3s ease;
+  top:38vw;
+  opacity: 0;
+  animation:
     appear 1s forwards;
     animation-duration: 5s;
-    animation-delay: 2s; */
+    animation-delay: 2s;
 }
 
 #github{
-  top:78vw;
-  left:49vw;
-}
-#github:hover{
-  top:77vw;
+  left:28vw;
 }
 
 #linkedin{
-  top:86.5vw;
-  left:35.5vw;
-}
-#linkedin:hover{
-  top:85.5vw;
+  left:37.33333vw;
 }
 
 #design{
-  top:59vw;
-  left:65.5vw;
-}
-#design:hover{
-  top:58vw;
-}
-
-#store{
-  top:68vw;
-  left:64.5vw;
-}
-#store:hover{
-  top:67vw;
+  left:46.666666vw;
 }
 
 #profile{
-  top:59vw;
-  left:21vw;
-}
-#profile:hover{
-  top:58vw;
+  left:56vw;
 }
 
+.menu:hover{
+  top:36vw;
+}
 
 /* The typing effect */
 @keyframes typing {

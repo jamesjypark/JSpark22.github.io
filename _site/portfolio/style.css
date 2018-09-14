@@ -1,15 +1,10 @@
-body{/*rgba(24,100,164)*/;
+*{/*rgba(24,100,164)*/;
   background: rgba(30, 125, 207);
-  transition: 0.3s all;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   background-size: cover;
- }
- .changeColor {
-   background: white;
- }
+   background-size: cover;}
 div{
   height: auto;
   width: auto;

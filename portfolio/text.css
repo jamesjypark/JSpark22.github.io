@@ -5,13 +5,21 @@ body {
 }
 
 #hi{
-  font-size:5vw;
+  font-size:6em;
   position:absolute;
   top:2vw;
   left:20vw;
   animation:
     appear 1s forwards;
     animation-duration: 5s;
+}
+
+#info{
+  position:absolute;
+  left:2vw;
+  top:10em;
+  font-size:7em;
+  text-align: left;
 }
 
 .text{
@@ -21,27 +29,23 @@ body {
 }
 
 .typewriter h1 {
-  font-size: 16vw;
+  font-size: 16em;
   font-weight: bolder;
   overflow: hidden;
   background: transparent;
   border-right: .05em solid transparent;
   margin-left: 0;
-  margin-top:9vw;
-  letter-spacing: .05em;
+  line-height: 1.0em;
+  letter-spacing: .05em; /* Adjust as needed */
   animation:
     typing 0.7s steps(6, end),
     blink-caret 0.5s step-end 1.6;
 }
 
-.typewriter h2{
-  font-size: 16vw;
-  font-weight: bolder;
-  overflow: hidden;
-  background: transparent;
-  border-right: .05em solid transparent; /* The typwriter cursor */
-  margin-top:-20vw;
-  letter-spacing: .05em; /* Adjust as needed */
+#first{
+  margin-top:0.5em;
+}
+#last {
   animation:
     typing 0.7s steps(5, end),
     blink-caret .5s step-end 1.5;
@@ -51,73 +55,27 @@ body {
   max-width: 500vw;
 }
 
-#info{
-  position:absolute;
-  left:5vw;
-  top:55vw;
-  font-size:6vw;
-  text-align: left;
-}
 .menu{
   font-size:6vw;
-  color: white;
   font-family: "Viga";
-  position:absolute;
   transition: 0.5s ease;
+  color:rgba(24,100,164);
   /* animation:
     appear 1s forwards;
     animation-duration: 5s;
     animation-delay: 2s; */
 }
 
-#github{
-  top:78vw;
-  left:49vw;
-}
-#github:hover{
-  top:77vw;
+.menu:hover{
+  font-size:7vw;
+  color: rgba(153,226,101);
 }
 
-#linkedin{
-  top:86.5vw;
-  left:35.5vw;
-}
-#linkedin:hover{
-  top:85.5vw;
-}
-
-#design{
-  top:59vw;
-  left:65.5vw;
-}
-#design:hover{
-  top:58vw;
-}
-
-#store{
-  top:68vw;
-  left:64.5vw;
-}
-#store:hover{
-  top:67vw;
-}
-
-#profile{
-  top:59vw;
-  left:21vw;
-}
-#profile:hover{
-  top:58vw;
-}
-
-
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: white }
   50% { border-color: white}
@@ -132,5 +90,31 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width:992px) and (min-width:600px){
+  .typewriter h1{
+    font-size:12em;
+  }
+  #hi{
+    font-size:5em;
+  }
+  #info{
+    top:18em;
+    font-size:3em;
+  }
+}
+
+@media screen and (max-width:600px){
+  .typewriter h1 {
+    font-size:7.5em;
+  }
+  #hi{
+    font-size:3em;
+  }
+  #info{
+    top:20em;
+    font-size:2em;
   }
 }

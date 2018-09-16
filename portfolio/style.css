@@ -2,15 +2,13 @@ html{
   height:100%;
 }
 
-body {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  margin:0;
+header{
+  display: block;
 }
+
 /*for index*/
 .index{/*rgba(24,100,164)*/
-  position:absolute;
+  position:relative;
   left:0;
   right:0;
   width:100%;
@@ -56,7 +54,7 @@ h1{
 /*index ends */
 
 .footer{
-  position:absolute;
+  position:relative;
   right: 0;
   bottom: 0;
   left: 0;

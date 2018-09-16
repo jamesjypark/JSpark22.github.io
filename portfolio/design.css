@@ -1,7 +1,49 @@
 .design{
   background-color: rgba(30,125,207);
+  position: relative;
+  justify-content: center;
+  width:100%;
+  height: 100%;
+  font-size: 0.7em;
 }
 
 .quote{
-  font-family: 'Kaushan Script'
+  font-family: 'Cormorant Garamond';
+  font-size:2.6em;
+  font-weight: lighter;
+}
+
+.author{
+  font-family: 'Cormorant Garamond';
+  font-size:1.6em;
+  text-align: right;
+  margin-top:0;
+  margin-right:0.5em;
+}
+
+/* .projectsContainer{
+  width: 80%;
+  height:50em;
+  display: inline-block;
+  margin-left:10%;
+  margin-right:10%;
+  background: blue;
+} */
+
+.carousel-cell {
+  width: 30%;
+  height: 50em;
+  margin-right: 10px;
+  text-align:center;
+  background: green;
+  overflow: hidden;
+}
+
+.flickity-button {
+  background: transparent;
+}
+
+.flickity-page-dots{
+  bottom:18em;
+  color: white;
 }

@@ -1,14 +1,8 @@
-/* GLOBAL STYLES */
-body {
-  display: flex;
-  justify-content: center;
-}
-
 #hi{
   font-size:6em;
   position:absolute;
-  top:2vw;
-  left:20vw;
+  top:0.3em;
+  left:2em;
   animation:
     appear 1s forwards;
     animation-duration: 5s;
@@ -16,9 +10,9 @@ body {
 
 #info{
   position:absolute;
-  left:2vw;
-  top:10em;
-  font-size:7em;
+  left:0.5em;
+  margin-top:6em;
+  font-size:5.6em;
   text-align: left;
 }
 
@@ -29,17 +23,19 @@ body {
 }
 
 .typewriter h1 {
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
   font-size: 16em;
   font-weight: bolder;
   overflow: hidden;
   background: transparent;
   border-right: .05em solid transparent;
-  margin-left: 0;
   line-height: 1.0em;
   letter-spacing: .05em; /* Adjust as needed */
   animation:
-    typing 0.7s steps(6, end),
-    blink-caret 0.5s step-end 1.6;
+    typing 0.7s steps(9, end),
+    blink-caret 0.5s step-end 1.0;
 }
 
 #first{
@@ -47,8 +43,8 @@ body {
 }
 #last {
   animation:
-    typing 0.7s steps(5, end),
-    blink-caret .5s step-end 1.5;
+    typing 0.8s steps(10, end),
+    blink-caret .5s step-end 1.0;
 }
 
 .typewriter{
@@ -56,7 +52,6 @@ body {
 }
 
 .menu{
-  font-size:6vw;
   font-family: "Viga";
   transition: 0.5s ease;
   color:rgba(24,100,164);
@@ -67,15 +62,17 @@ body {
 }
 
 .menu:hover{
-  font-size:7vw;
+  font-size:1.2em;
   color: rgba(153,226,101);
 }
 
+/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
+/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: white }
   50% { border-color: white}

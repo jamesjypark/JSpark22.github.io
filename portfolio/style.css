@@ -1,28 +1,60 @@
-body{/*rgba(24,100,164)*/;
-  background: rgba(30, 125, 207);
+html{
+  height:100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin:0;
+}
+/*for index*/
+.index{/*rgba(24,100,164)*/
+  position:absolute;
+  left:0;
+  right:0;
+  width:100%;
+  max-height:100%;
+  background-image: url(images/main.jpg);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  justify-content: center;
  }
- .background-image{
-   transition: background 0.5s linear;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: 50% 50%;
-   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+ .wrapper{
+   left:0;
+   right:0;
+   height:100%;
+   min-width:100%;
  }
- /* .changeColor {
-   background-image: url("images/main.jpg");
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: 50% 50%;
- } */
+ .layOn{
+   transition: ease 0.5s;
+   background: rgba(30,125,207);
+   position: fixed;
+   left:0;
+   right:0;
+   height:100%;
+   min-width:100%;
+   z-index: -1;
+ }
 div{
-  height: auto;
-  width: auto;
+  height:100%;
+  width:100%;
 }
 h1{
   margin-top:0;
   margin-bottom:0;
+}
+@keyframes fadeRed {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+/*index ends */
+/* for about */
+.about{
+  background-color: red;
 }

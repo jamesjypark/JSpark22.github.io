@@ -1,0 +1,24 @@
+.about{
+  background-color: rgba(30,125,207);
+}
+
+.greeting{
+  font-family: 'Kaushan Script';
+  font-size: 6em;
+}
+
+.info{
+  font-size: 3em;
+}
+
+.link{
+  transition: 0.3s ease;
+  color: white;
+}
+.link:hover{
+  font-size: 1.1em;
+}
+div{
+  justify-content: center;
+  text-align: center;
+}

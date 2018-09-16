@@ -54,7 +54,14 @@ h1{
   }
 }
 /*index ends */
-/* for about */
-.about{
-  background-color: red;
+
+.footer{
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background-color: #efefef;
+  text-align: center;
+  clear: both;
 }

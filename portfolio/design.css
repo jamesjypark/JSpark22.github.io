@@ -8,6 +8,7 @@
 }
 
 .quote{
+  position:relative;
   font-family: 'Cormorant Garamond';
   font-size:2.6em;
   font-weight: lighter;
@@ -21,22 +22,25 @@
   margin-right:0.5em;
 }
 
-/* .projectsContainer{
-  width: 80%;
-  height:50em;
-  display: inline-block;
-  margin-left:10%;
-  margin-right:10%;
-  background: blue;
-} */
-
+.description{
+  text-align: center;
+  font-size:4.0em;
+}
+.carousel{
+  margin-top:0;
+  margin-bottom:0;
+}
 .carousel-cell {
-  width: 30%;
-  height: 50em;
+  width:auto%;
+  max-height: 100%;
   margin-right: 10px;
   text-align:center;
-  background: green;
+  background: transparent;
   overflow: hidden;
+}
+.carousel-image{
+  height: 80%;
+  width:auto;
 }
 
 .flickity-button {

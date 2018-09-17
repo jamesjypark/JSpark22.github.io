@@ -7,11 +7,21 @@
   font-size: 0.7em;
 }
 
-.quote{
-  position:relative;
-  font-family: 'Cormorant Garamond';
+.quote-box{
   font-size:2.6em;
+  margin-top:5%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width:80%;
+}
+.quote{
+  font-family: 'Cormorant Garamond';
   font-weight: lighter;
+  animation:
+    appear 1s forwards;
+    animation-duration: 5s;
 }
 
 .author{
@@ -20,26 +30,33 @@
   text-align: right;
   margin-top:0;
   margin-right:0.5em;
+  animation:
+    appear 1s forwards;
+    animation-duration: 15s;
 }
 
 .description{
   text-align: center;
   font-size:4.0em;
 }
-.carousel{
+.carousel-box{
   margin-top:0;
-  margin-bottom:0;
+}
+.carousel{
+  height:70%;
+  margin-top:2%;
+  margin-bottom:5%;
 }
 .carousel-cell {
-  width:auto%;
+  max-width: 100%;
   max-height: 100%;
-  margin-right: 10px;
+  margin-right: 0px;
   text-align:center;
   background: transparent;
   overflow: hidden;
 }
 .carousel-image{
-  height: 80%;
+  height: 100%;
   width:auto;
 }
 
@@ -48,6 +65,12 @@
 }
 
 .flickity-page-dots{
-  bottom:18em;
-  color: white;
+  bottom:auto;
+}
+
+.flickity-page-dots .dot{
+  height:1em;
+  width:8em;
+  margin:0;
+  border-radius: 0;
 }

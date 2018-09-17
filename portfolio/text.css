@@ -90,6 +90,16 @@
   }
 }
 
+@media screen and (min-width:2000px){
+  .typewriter h1{
+    background: red;
+    font-size:15vw;
+  }
+  #hi{
+    font-size:8em;
+  }
+}
+
 @media screen and (max-width:992px) and (min-width:600px){
   .typewriter h1{
     font-size:12em;

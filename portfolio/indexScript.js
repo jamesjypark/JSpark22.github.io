@@ -1,9 +1,9 @@
 $(function() {
    $(window).scroll(function () {
-      if ($(this).scrollTop() > 700){
+      if ($(this).scrollTop() > 600){
         $('#layOn').css('background','rgba(0,0,0,0.7)');
             }
-      if ($(this).scrollTop() < 700) {
+      if ($(this).scrollTop() < 600) {
         $('#layOn').css('background','rgba(30, 125, 207)');
       }
    });

@@ -20,6 +20,7 @@ header{
   justify-content: center;
  }
  .wrapper{
+   margin-top:5em;
    left:0;
    right:0;
    height:100%;
@@ -28,6 +29,7 @@ header{
  .layOn{
    transition: ease 0.5s;
    background: rgba(30,125,207);
+   /* background: linear-gradient(45deg, black, rgba(30,125,207)); */
    position: fixed;
    left:0;
    right:0;

@@ -3,12 +3,16 @@ layout: wrapper
 permalink: /about/
 ---
 <link rel="stylesheet" href="/about.css">
-<body class="about">
-  {% include button.html %}
-  <div>
-    <h1 class="greeting text">Passionate<br>Curious<br> and Mint-chocolate-ice-cream-lovin'</h1>
-    <h2 class="info text">I am a student at the University of Victoria who strongly associates with the above words, </h2>
-    <h2 class="info text">Connect with me through <a class="link" href="https://www.linkedin.com/in/james-park-victoria">LinkedIn</a> or <a class="link" href="mailto:james.park.victoria@gmail.com">send me an email</a> if you want to chat!</h2>
-  </div>
-</body>
-<!-- {% include footer.html %} -->
+<div class="about">
+  <h1 id="Iam" class="greeting text">I am</h1>
+  <div class="main-carousel" data-flickity='{ "cellAlign": "left", "autoPlay": 1500, "wrapAround": true, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": false}'>
+      <div class="carousel-cell"><h1 class="carousel-text text">Passionate.</h1></div>
+      <div class="carousel-cell"><h1 class="carousel-text text">Curious.</h1></div>
+      <div class="carousel-cell"><h1 class="carousel-text text">Inspired.</h1></div>
+      <div class="carousel-cell"><h1 class="carousel-text text">Creative.</h1></div>
+      <div class="carousel-cell"><h1 class="carousel-text text">Motivated.</h1></div>
+    </div>
+  <h2 class="info text">Pursuing a degree in Software Engineering at the University of Victoria, I am an ordinary college student who is excited to learn something new every day.</h2>
+  <h2 class="info text">Connect with me through <a class="link" href="https://www.linkedin.com/in/james-park-victoria">LinkedIn</a> or <a class="link" href="mailto:james.park.victoria@gmail.com">send me an email</a> if you want to chat!</h2>
+</div>
+<div id="background"></div>

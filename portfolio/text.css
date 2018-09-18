@@ -1,19 +1,21 @@
 #hi{
   font-size:6em;
-  position:absolute;
-  top:0.3em;
-  left:2em;
+  margin-bottom:0;
+  margin-left:20%;
+  line-height: 1;
   animation:
     appear 1s forwards;
     animation-duration: 5s;
 }
 
 #info{
-  position:absolute;
   left:0.5em;
-  margin-top:6em;
-  font-size:5.6em;
-  text-align: left;
+  margin-top:4em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:2em;
+  font-size:4.5em;
+  text-align: center;
 }
 
 .text{
@@ -31,19 +33,19 @@
   overflow: hidden;
   background: transparent;
   border-right: .05em solid transparent;
-  line-height: 1.0em;
+  line-height: 0.8em;
   letter-spacing: .05em; /* Adjust as needed */
   animation:
-    typing 0.7s steps(9, end),
+    typing .7s steps(9, end),
     blink-caret 0.5s step-end 0.8;
 }
 
 #first{
-  margin-top:0.5em;
+  margin-top:0;
 }
 #last {
   animation:
-    typing 0.8s steps(10, end),
+    typing .9s steps(10, end),
     blink-caret .5s step-end .8;
 }
 
@@ -89,39 +91,80 @@
     opacity: 1;
   }
 }
-
+/* max */
 @media screen and (min-width:2000px){
   .typewriter h1{
-    background: red;
-    font-size:15vw;
+    background: transparent;
+    font-size:15.5vw;
+    animation:
+      typing 0.9s steps(9, end),
+  }
+  .wrapper{
+    margin-top: 9em;
   }
   #hi{
     font-size:8em;
   }
+  #last {
+    animation:
+      typing .9s steps(10, end),
+  }
+  #info{
+    margin-bottom:4em;
+  }
 }
 
+/* tablet */
 @media screen and (max-width:992px) and (min-width:600px){
   .typewriter h1{
+    background: transparent;
     font-size:12em;
+    animation:
+      typing .6s steps(7, end),
+      blink-caret 0.5s step-end 0.8;
+  }
+  .wrapper{
+    margin-top: 14em;
   }
   #hi{
     font-size:5em;
   }
+  #last{
+    animation:
+      typing .6s steps(7, end),
+      blink-caret 0.5s step-end 0.8;
+  }
   #info{
     top:18em;
     font-size:3em;
+    margin-bottom:5em;
   }
 }
 
+/* mobile */
 @media screen and (max-width:600px){
   .typewriter h1 {
-    font-size:7.5em;
+    background: transparent;
+    font-size:7em;
+    animation:
+      typing .5s steps(6, end),
+      blink-caret 0.5s step-end 0.8;
+  }
+  .wrapper{
+    margin-top:7em;
   }
   #hi{
-    font-size:3em;
+    font-size:4em;
+    margin-left:0.5em;
+  }
+  #last{
+    animation:
+      typing .5s steps(6, end),
+      blink-caret 0.5s step-end 0.8;
   }
   #info{
     top:20em;
     font-size:2em;
+    margin-bottom:4em;
   }
 }

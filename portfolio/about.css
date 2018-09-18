@@ -1,14 +1,36 @@
-.about{
-  background-color: rgba(30,125,207);
-}
-
 .greeting{
-  font-family: 'Kaushan Script';
-  font-size: 6em;
+  font-size: 10em;
+  margin-bottom:0;
+  line-height: 1;
+  color:purple;
+  margin-top:0.3em;
+  margin-left:0.3em;
+}
+.main-carousel{
+  margin-top:0;
+  line-height: 1;
+  margin-left:3em;
+  margin-bottom:10em;
+  animation:
+    appear 1s forwards;
+    animation-duration: 7s;
+}
+.carousel-text{
+  font-size: 15em;
+  margin-left: auto;
+  margin-right:auto;
+}
+.carousel-cell{
+  width:100%;
+  height: auto;
+  margin-right:10px;
 }
 
 .info{
-  font-size: 3em;
+  font-size: 2.5em;
+  width:80%;
+  margin-left: 1.5em;
+  margin-right: auto;
 }
 
 .link{
@@ -18,7 +40,80 @@
 .link:hover{
   font-size: 1.1em;
 }
-div{
-  justify-content: center;
-  text-align: center;
+.about{
+  background: transparent;
 }
+#background{
+  transition: ease 0.5s;
+  background: linear-gradient(45deg,black,rgba(30,125,207));
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  height:100%;
+  min-width:100%;
+  z-index: -1;
+}
+
+/*max*/
+@media screen and (min-width:2000px){
+  .greeting{
+    font-size: 14em;
+    margin-left: 1em;
+    margin-top:0.5em;
+    color:red;
+  }
+  .main-carousel{
+    margin-left:13em;
+    margin-bottom:13em;
+  }
+  .carousel-text{
+    font-size:20em;
+  }
+  .info{
+    font-size: 2.5em;
+    margin-left:5em;
+  }
+}
+  /* small display monitor*/
+@media screen and (max-width:1400px) and (min-width:992px){
+  .greeting{
+    margin-top:1.5em;
+    font-size: 8em;
+    color: brown;
+  }
+  .main-carousel{
+    margin-left:2em;
+    margin-bottom:20em;
+  }
+  .carousel-text{
+    font-size: 11em;
+  }
+  .info{
+    font-size:2em;
+  }
+}
+  /*tablet*/
+@media screen and (max-width:992px) and (min-width:600px){
+    .about{
+      margin-bottom:15em;
+    }
+    .greeting{
+      margin-top:3em;
+      margin-left:0.1em;
+      font-size: 5em;
+      color:green;
+    }
+    .main-carousel{
+      margin-left:0.5em;
+      margin-bottom:20em;
+    }
+    .carousel-text{
+      font-size: 8em;
+      overflow:hidden;
+    }
+    .info{
+      font-size:1.5em;
+      width: 90%;
+    }
+  }

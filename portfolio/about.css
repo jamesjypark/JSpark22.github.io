@@ -2,7 +2,6 @@
   font-size: 10em;
   margin-bottom:0;
   line-height: 1;
-  color:purple;
   margin-top:0.3em;
   margin-left:0.3em;
 }
@@ -10,14 +9,14 @@
   margin-top:0;
   line-height: 1;
   margin-left:3em;
-  margin-bottom:10em;
+  margin-bottom:22em;
   animation:
     appear 1s forwards;
     animation-duration: 7s;
 }
 .carousel-text{
   font-size: 15em;
-  margin-left: auto;
+  margin-left:auto;
   margin-right:auto;
 }
 .carousel-cell{
@@ -42,6 +41,7 @@
 }
 .about{
   background: transparent;
+  margin-bottom: 10em;
 }
 #background{
   transition: ease 0.5s;
@@ -61,7 +61,6 @@
     font-size: 14em;
     margin-left: 1em;
     margin-top:0.5em;
-    color:red;
   }
   .main-carousel{
     margin-left:13em;
@@ -75,12 +74,11 @@
     margin-left:5em;
   }
 }
-  /* small display monitor*/
+/* small display monitor*/
 @media screen and (max-width:1400px) and (min-width:992px){
   .greeting{
     margin-top:1.5em;
     font-size: 8em;
-    color: brown;
   }
   .main-carousel{
     margin-left:2em;
@@ -93,7 +91,7 @@
     font-size:2em;
   }
 }
-  /*tablet*/
+/*tablet*/
 @media screen and (max-width:992px) and (min-width:600px){
     .about{
       margin-bottom:15em;
@@ -102,7 +100,6 @@
       margin-top:3em;
       margin-left:0.1em;
       font-size: 5em;
-      color:green;
     }
     .main-carousel{
       margin-left:0.5em;
@@ -117,3 +114,25 @@
       width: 90%;
     }
   }
+/*mobile*/
+@media screen and (max-width:600px){
+  .about{
+    margin-bottom:10em;
+    margin-top:12em;
+  }
+  .greeting{
+    margin-left: 0.1em;
+    font-size:3em;
+  }
+  .main-carousel{
+    margin-left:0.3em;
+    margin-bottom:23em;
+  }
+  .carousel-text{
+    font-size: 4.3em;
+    overflow: hidden;
+  }
+  .info{
+    font-size:1.3em;
+  }
+}

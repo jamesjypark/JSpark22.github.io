@@ -116,14 +116,15 @@
     font-size:3em;
   }
   .description{
-    font-size:3em;
+    font-size:4em;
   }
   .carousel{
+    height:90vw;
     margin-top:0em;
-    margin-bottom:0em;
+    margin-bottom:10em;
   }
   .carousel-cell{
-    max-height: 85%;
+    max-height: 100%;
   }
   .flickity-page-dots .dot{
     height:1em;

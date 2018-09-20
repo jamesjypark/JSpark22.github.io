@@ -1,3 +1,24 @@
-<div id="buttonbox">
-  <a href="/"><img  id="logo" src="/images/JP.png"></a>
+<div class="buttonbox">
+  <a onclick=logoClick()><img  class="logo" src="/images/JP.png"></a>
 </div>
+<div id="settings-background" onclick="logoClick()">
+  <div class="settings-box">
+    <a class="link" href="/"><h1 class="settings text">HOME</h1></a>
+    <a class="link" href="/about/"><h1 class="settings text">ABOUT ME</h1></a>
+    <a class="link" href="/design/"><h1 class="settings text">DESIGN</h1></a>
+    <a class="link" href="/"><h1 class="settings text">PROJECTS</h1></a>
+    <a class="link" href="/"><h1 class="settings text">RESUME</h1></a>
+</div>
+</div>
+<script>
+  let settings = document.getElementById("settings-background");
+  settings.style.display = "none";
+  function logoClick(){
+    if (settings.style.display == "none"){
+      settings.style.display = "block";
+    } else {
+      settings.style.display = "none";
+    }
+  }
+
+</script>

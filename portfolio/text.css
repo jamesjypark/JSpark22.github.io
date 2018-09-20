@@ -43,7 +43,7 @@
 #first{
   margin-top:0;
 }
-#last {
+#last{
   animation:
     typing .9s steps(10, end),
     blink-caret .5s step-end .8;
@@ -57,10 +57,6 @@
   font-family: "Viga";
   transition: 0.5s ease;
   color:rgba(24,100,164);
-  /* animation:
-    appear 1s forwards;
-    animation-duration: 5s;
-    animation-delay: 2s; */
 }
 
 .menu:hover{
